@@ -1,0 +1,289 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{91FC1F8A-A89A-43B6-A14E-0894F20AAE38}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QLKhoBB</RootNamespace>
+    <AssemblyName>QLKhoBB</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="DevExpress.BonusSkins.v19.2" />
+    <Reference Include="DevExpress.Data.v19.2" />
+    <Reference Include="DevExpress.Printing.v19.2.Core" />
+    <Reference Include="DevExpress.Utils.v19.2" />
+    <Reference Include="DevExpress.XtraBars.v19.2" />
+    <Reference Include="DevExpress.Sparkline.v19.2.Core" />
+    <Reference Include="DevExpress.XtraEditors.v19.2" />
+    <Reference Include="DevExpress.XtraGrid.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="ExcelDataReader, Version=3.6.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelDataReader.3.6.0\lib\net45\ExcelDataReader.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelDataReader.DataSet, Version=3.6.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelDataReader.DataSet.3.6.0\lib\net35\ExcelDataReader.DataSet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Z.Dapper.Plus, Version=3.0.19.0, Culture=neutral, PublicKeyToken=59b66d028979105b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Z.Dapper.Plus.3.0.19\lib\net45\Z.Dapper.Plus.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Backup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Backup.Designer.cs">
+      <DependentUpon>Backup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Connect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Connect.Designer.cs">
+      <DependentUpon>Connect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectDB.cs" />
+    <Compile Include="Dangnhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dangnhap.Designer.cs">
+      <DependentUpon>Dangnhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doimk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doimk.Designer.cs">
+      <DependentUpon>Doimk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_NhapD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_NhapD.Designer.cs">
+      <DependentUpon>frm_NhapD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_XuatD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_XuatD.Designer.cs">
+      <DependentUpon>frm_XuatD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HaoHut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HaoHut.Designer.cs">
+      <DependentUpon>HaoHut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="History.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="History.Designer.cs">
+      <DependentUpon>History.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImportN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImportN.Designer.cs">
+      <DependentUpon>ImportN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImportX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImportX.Designer.cs">
+      <DependentUpon>ImportX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCC.Designer.cs">
+      <DependentUpon>NCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nhap.cs" />
+    <Compile Include="NhapKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhapKho.Designer.cs">
+      <DependentUpon>NhapKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLtaikhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLtaikhoan.Designer.cs">
+      <DependentUpon>QLtaikhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLvattu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLvattu.Designer.cs">
+      <DependentUpon>QLvattu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quyen.cs" />
+    <Compile Include="Restore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restore.Designer.cs">
+      <DependentUpon>Restore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ton.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ton.Designer.cs">
+      <DependentUpon>Ton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tonki.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tonki.Designer.cs">
+      <DependentUpon>Tonki.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trangchu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trangchu.Designer.cs">
+      <DependentUpon>Trangchu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Xuat.cs" />
+    <Compile Include="XuatKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XuatKho.Designer.cs">
+      <DependentUpon>XuatKho.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Backup.resx">
+      <DependentUpon>Backup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Connect.resx">
+      <DependentUpon>Connect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dangnhap.resx">
+      <DependentUpon>Dangnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doimk.resx">
+      <DependentUpon>Doimk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_NhapD.resx">
+      <DependentUpon>frm_NhapD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_XuatD.resx">
+      <DependentUpon>frm_XuatD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HaoHut.resx">
+      <DependentUpon>HaoHut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="History.resx">
+      <DependentUpon>History.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportN.resx">
+      <DependentUpon>ImportN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportX.resx">
+      <DependentUpon>ImportX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCC.resx">
+      <DependentUpon>NCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhapKho.resx">
+      <DependentUpon>NhapKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="QLtaikhoan.resx">
+      <DependentUpon>QLtaikhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLvattu.resx">
+      <DependentUpon>QLvattu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restore.resx">
+      <DependentUpon>Restore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ton.resx">
+      <DependentUpon>Ton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tonki.resx">
+      <DependentUpon>Tonki.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trangchu.resx">
+      <DependentUpon>Trangchu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="XuatKho.resx">
+      <DependentUpon>XuatKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\Nhap.datasource" />
+    <None Include="Properties\DataSources\Xuat.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z2080613128710_df6c8157186fcf0c0d5783918a9178b4.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
